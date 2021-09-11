@@ -1,4 +1,4 @@
-import React, {useState}  from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import {Link} from "gatsby";
 import {FaBars} from "react-icons/fa";
@@ -69,28 +69,30 @@ const Header = () => {
 
     const toggle = () => {
         setIsOpen(!isOpen);
-    }
+    };
 
-    return <>
-        <Nav>
-            <NavLink to="/">Trip Travel</NavLink>
-            <Bars onClick={toggle} />
-            <NavMenu>
-                {menuData &&
-                    menuData.map(menu => (
-                        <NavLink to={menu.path} key={menu.id}>
-                            {menu.title}
-                        </NavLink>
-                    ))}
-            </NavMenu>
-            <NavBtn>
-                <Button primary="true" round="true" to="/">
-                    Забронировать
-                </Button>
-            </NavBtn>
-        </Nav>
-        <DropDown toggle={toggle} isOpen={isOpen} />
-    </>
+    return (
+        <>
+            <Nav>
+                <NavLink to="/">Trip Travel</NavLink>
+                <Bars onClick={toggle} />
+                <NavMenu>
+                    {menuData &&
+                        menuData.map(menu => (
+                            <NavLink to={menu.path} key={menu.id}>
+                                {menu.title}
+                            </NavLink>
+                        ))}
+                </NavMenu>
+                <NavBtn>
+                    <Button primary="true" round="true" to="/">
+                        Забронировать
+                    </Button>
+                </NavBtn>
+            </Nav>
+            <DropDown toggle={toggle} isOpen={isOpen} />
+        </>
+    );
 };
 
 export default Header;

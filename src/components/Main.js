@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-import { Button } from './UI/Button';
+import {Button} from "./UI/Button";
 import Video from "../assets/videos/travel.mp4";
 
 const Container = styled.div`
@@ -24,8 +24,12 @@ const Container = styled.div`
         width: 100%;
         height: 100%;
         z-index: 2;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%
-        ), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.6) 100%
+            ),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     }
 `;
 
@@ -86,17 +90,26 @@ const Main = () => {
     return (
         <Container>
             <MainBackground>
-                <VideoBackground src={Video} type="video/mp4" autoPlay loop muted playsInline />
+                <VideoBackground
+                    src={Video}
+                    type="video/mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
             </MainBackground>
             <MainContent>
                 <MainItems>
                     <MainTitle>Необычные путешествия</MainTitle>
                     <MainText>По всему свету</MainText>
-                    <Button big="true" primary="true" round="true" to="/">Начать Тур</Button>
+                    <Button big="true" primary="true" round="true" to="/">
+                        Начать Тур
+                    </Button>
                 </MainItems>
             </MainContent>
         </Container>
-    )
-}
+    );
+};
 
-export default Main
+export default Main;
