@@ -1,4 +1,8 @@
 {
+  "printWidth": 80,
   "arrowParens": "avoid",
-  "semi": false
+  "trailingComma": "all",
+  "semi": true,
+  "tabWidth": 4,
+  "bracketSpacing": false
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "img": "../assets/images/travel-1.jpg",
+        "alt" : "Средиземное море",
+        "name": "Круиз по Средиземному морю",
+        "button": "Подробнее"
+    },
+    {
+        "id": 2,
+        "img": "../assets/images/travel-2.jpg",
+        "alt" : "Горы Норвегии",
+        "name": "Горы Норвегии",
+        "button": "Подробнее"
+    },
+    {
+        "id": 3,
+        "img": "../assets/images/travel-3.jpg",
+        "alt" : "Исландия",
+        "name": "Исландия",
+        "button": "Подробнее"
+    },
+    {
+        "id": 4,
+        "img": "../assets/images/travel-4.jpg",
+        "alt" : "Сан-Франциско",
+        "name": "Сан-Франциско",
+        "button": "Подробнее"
+    }
+]
