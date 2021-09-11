@@ -64,7 +64,7 @@ const NavBtn = styled.div`
     }
 `;
 
-const Header = () => {
+const Heading = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -95,4 +95,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Heading;
